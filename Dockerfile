@@ -5,6 +5,5 @@ RUN mkdir /code
 WORKDIR /code
 ADD . /code/
 RUN pip install -r requirements.txt
-RUN CREATE DATABASE chat CHARACTER SET utf8;
 RUN python manage.py migrate
 
